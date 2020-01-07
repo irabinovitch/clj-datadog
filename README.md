@@ -1,6 +1,6 @@
 # clj-datadog
 
-`clj-datadog` is a client for [DataDog](https://www.datadoghq.com) service
+`clj-datadog` is a client for [Datadog](https://www.datadoghq.com) service
 for the [Clojure](http://clojure.org) programming language.
 
 [![Circle CI](https://circleci.com/gh/truckerpath/clj-datadog.svg?style=shield)](https://circleci.com/gh/truckerpath/clj-datadog)
@@ -16,7 +16,7 @@ Include the following dependency in your project.clj file:
 
 ## Example Usage
 
-To start tracking events and sending them to DataDog, you firstly have
+To start tracking events and sending them to Datadog, you firstly have
 to register account and install
 [DataGog agent](http://docs.datadoghq.com/guides/basic_agent_usage/)
 that will start StatsD server on the machine you are running your
@@ -28,9 +28,9 @@ Then import datadog in your namespace:
 
 Following datadog metric methods are available:
 
-### DataDog connection
+### Datadog connection
 
-You have to provide a map with host and port of DataDog agent or an empty map
+You have to provide a map with host and port of Datadog agent or an empty map
 to use default (`{:host "127.0.0.1" :port 8125}`).
 
 You may also create macros like
@@ -42,7 +42,7 @@ You may also create macros like
 
 ### Counters
 
-You can use either amount or DataDog tags or both.
+You can use either amount or Datadog tags or both.
 Decrements are completely symmetrical to increments but
 with negative values.
 
